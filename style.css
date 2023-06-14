@@ -135,7 +135,7 @@ i{
 }
 
 .text2 {
-  color: var(--theme-fg-muted);
+  color: var(--theme-fg-subtle);
 }
 
 .swatch {
@@ -146,7 +146,7 @@ i{
   border-radius: 50%;
 
   &.text1 { background-color: var(--theme-fg-default);}
-  &.text2 { background-color: var( --theme-fg-muted);}
+  &.text2 { background-color: var( --theme-fg-subtle);}
 }
 
 .rad-shadow {
