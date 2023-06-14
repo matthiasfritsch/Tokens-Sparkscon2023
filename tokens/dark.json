@@ -2,7 +2,7 @@
   "theme": {
     "bg": {
       "default": {
-        "value": "#3d53f5",
+        "value": "#171717",
         "type": "color"
       },
       "subtle": {
@@ -34,7 +34,7 @@
     },
     "accent": {
       "default": {
-        "value": "#3d53f5",
+        "value": "#9c0f2e",
         "type": "color"
       },
       "subtle": {
