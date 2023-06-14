@@ -13,8 +13,6 @@
 
 html {
   block-size: 100%;
-  background-color: var(--theme-bg-default);
-  color: var(--theme-fg-default);
 }
 
 body {
@@ -24,6 +22,8 @@ body {
   display: grid;
   place-content: center;
   gap: 5vmax;
+  background-color: var(--theme-bg-default);
+  color: var(--theme-fg-default);
 }
 
 main {
