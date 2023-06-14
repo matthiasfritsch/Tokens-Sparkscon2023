@@ -1,13 +1,160 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-body {
-  background: var(--theme-bg-default);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  transition: 0.5s background ease;
+@use postcss-preset-env {
+  stage: 0;
+  features: {
+    "logical-properties-and-values": false
+  }
+} 
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+
+html {
+  block-size: 100%;
+  background-color: var(--theme-bg-default);
+  color: var(--theme-fg-default);
+}
+
+body {
+  min-block-size: 100%;
+  font-family: system-ui, sans-serif;
+  padding: 5vmax;
+  display: grid;
+  place-content: center;
+  gap: 5vmax;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10vmax 10vmin;
+}
+
+section {
+  display: grid;
+  gap: 2.5vh;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+p {
+  max-inline-size: 35ch;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+header {
+  display: inline-grid;
+  gap: 1ch;
+}
+
+form {
+  display: flex;
+  gap: 2ch;
+
+  & > div {
+    display: inline-flex;
+    align-items: center;
+    gap: .75ch;
+  }
+}
+
+.surface-samples {
+  display: grid;
+  --size: 20ch;
+  grid-template-columns: var(--size) var(--size);
+  grid-auto-rows: var(--size);
+  gap: 2ch;
+
+  @media (width <= 480px) { & {
+    --size: 40vw;
+  }}
+
+  & > * {
+    border-radius: 1rem;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+}
+
+.text-samples {
+  display: grid;
+  gap: 1.5ch;
+
+  & > h1 {
+    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1ch;
+  }
+}
+
+.brand {
+  color: var(--theme-fg-default);
+  background-color: var(--theme-accent-default);
+}
+
+i{
+  color: var(--theme-accent-default);
+}
+
+.surface1 {
+  background-color: var(--theme-bg-muted);
+  color: var(--theme-fg-default);
+}
+
+.surface2 {
+   background-color: var(--theme-bg-subtle);
+  color: var(--theme-fg-default);
+}
+
+.surface3 {
+  background-color: var(--theme-bg-subtle);
+  color: var(--theme-fg-default);
+}
+
+.surface4 {
+  background-color: var(--theme-bg-muted);
+  color: var(--theme-fg-default);
+}
+
+.text1 {
+  color: var(--theme-fg-default);
+  @nest p& {
+    font-weight: 200;
+  }
+}
+
+.text2 {
+  color: var(--theme-accent-subtle);
+}
+
+.swatch {
+  display: inline-block;
+  flex-shrink: 0;
+  inline-size: 1.5ch;
+  block-size: 1.5ch;
+  border-radius: 50%;
+
+  &.text1 { background-color: var(--theme-fg-default);}
+  &.text2 { background-color: var(--theme-accent-subtle);}
+}
+
+.rad-shadow {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+
 
 .container {
   display: flex;
@@ -17,8 +164,6 @@ body {
 }
 
 .theme-switch {
-  --background: #FFF;
-  --text: #333;
   color: var(--theme-fg-default);
   width: 70px;
   height: 30px;
