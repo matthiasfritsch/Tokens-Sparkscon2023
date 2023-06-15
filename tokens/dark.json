@@ -34,7 +34,7 @@
     },
     "accent": {
       "default": {
-        "value": "#df1642",
+        "value": "#00f4ec",
         "type": "color"
       },
       "subtle": {
