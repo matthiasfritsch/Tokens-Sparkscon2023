@@ -34,4 +34,8 @@
   --colors-grey-800: #424242;
   --colors-grey-900: #323232;
   --colors-grey-950: #212121;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 16px;
+  --border-radius-multi-value: 4px;
       }
