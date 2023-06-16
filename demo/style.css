@@ -42,13 +42,11 @@ section {
 
 h1 {
   font-size: var(--font-sizes-h1);
-  font-weight: 100;
   font-family: var(--font-families-heading);
 }
 
 p {
   max-inline-size: 35ch;
-  font-size: 1.25rem;
   line-height: 1.5;
   font-family: var(--font-families-body);
   font-size: var(--font-sizes-body);
