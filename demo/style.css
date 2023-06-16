@@ -82,7 +82,7 @@ form {
   }}
 
   & > * {
-    border-radius: 1rem;
+    border-radius: var(--border-radius-xl)!important;
     display: grid;
     place-content: center;
     font-size: 3rem;
@@ -194,9 +194,4 @@ i{
 }
 .light-theme a {
   color: var(--theme-fg-default);
-}
-
-
-.border-radi{
-  border-radius:16px!important;
 }
