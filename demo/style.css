@@ -198,5 +198,5 @@ i{
 
 
 .border-radi{
-  border-radius: var(--border-radius-xl)!important;
+  border-radius:16px!important;
 }
