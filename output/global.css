@@ -38,4 +38,26 @@
   --border-radius-lg: 8px;
   --border-radius-xl: 16px;
   --border-radius-multi-value: 4px;
+  --font-families-heading: Inter;
+  --font-families-body: Roboto;
+  --line-heights-heading: 110%;
+  --line-heights-body: 140%;
+  --letter-spacing-default: 0;
+  --letter-spacing-increased: 150%;
+  --letter-spacing-decreased: -5%;
+  --paragraph-spacing-h1: 32;
+  --paragraph-spacing-h2: 26;
+  --font-weights-heading-regular: Regular;
+  --font-weights-heading-bold: Bold;
+  --font-weights-body-regular: Regular;
+  --font-weights-body-bold: Bold;
+  --font-sizes-h1: 48.829;
+  --font-sizes-h2: 39.063;
+  --font-sizes-h3: 31.25;
+  --font-sizes-h4: 25;
+  --font-sizes-h5: 20;
+  --font-sizes-h6: 16;
+  --font-sizes-body: 16;
+  --font-sizes-sm: 13.6;
+  --font-sizes-xs: 10.4;
       }
