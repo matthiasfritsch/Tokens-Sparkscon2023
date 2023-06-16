@@ -76,18 +76,7 @@ form {
   grid-template-columns: var(--size) var(--size);
   grid-auto-rows: var(--size);
   gap: 2ch;
-
-  @media (width <= 480px) { & {
-    --size: 40vw;
-  }}
-
-  & > * {
-    border-radius: var(--border-radius-xl)!important;
-    display: grid;
-    place-content: center;
-    font-size: 3rem;
-    font-weight: 200;
-  }
+  border-radius: var(--border-radius-xl)!important;
 }
 
 .text-samples {
