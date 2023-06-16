@@ -42,5 +42,11 @@
         "type": "color"
       }
     }
+  },
+  "fontFamilies": {
+    "body": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    }
   }
 }

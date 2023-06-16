@@ -168,7 +168,7 @@
   },
   "fontFamilies": {
     "heading": {
-      "value": "Arial",
+      "value": "Inter",
       "type": "fontFamilies"
     },
     "body": {
