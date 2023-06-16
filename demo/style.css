@@ -101,6 +101,7 @@ form {
 
 i{
   color: var(--theme-accent-default);
+  font-style: normal;
 }
 
 .surface1 {
