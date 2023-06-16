@@ -76,6 +76,9 @@ form {
   grid-template-columns: var(--size) var(--size);
   grid-auto-rows: var(--size);
   gap: 2ch;
+}
+
+.border-radi{
   border-radius: var(--border-radius-xl)!important;
 }
 
